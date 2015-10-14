@@ -1,0 +1,7 @@
+name: KitAPI
+version: ${project.build.version}
+description: Postremus Kit API
+website: https://github.com/Postremus/kitapi/
+author: postremus
+main: de.pro_crafting.kit.KitAPI
+soft-depend: [AdminCmd, Essentials, CommandBook]
