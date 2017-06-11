@@ -22,6 +22,9 @@ public class KitAPI
 	}
 
 	public static KitAPI getInstance() {
+		if (instance == null) {
+			instance = new KitAPI();
+		}
 		return instance;
 	}
 
