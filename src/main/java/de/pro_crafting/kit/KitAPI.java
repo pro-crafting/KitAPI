@@ -1,26 +1,31 @@
 package de.pro_crafting.kit;
 
+import de.pro_crafting.kit.plugins.AdminCmdProvider;
+import de.pro_crafting.kit.plugins.CommandBookProvider;
+import de.pro_crafting.kit.plugins.EssentialsProvider;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.ServicePriority;
 import org.bukkit.plugin.ServicesManager;
 
-import de.pro_crafting.kit.plugins.AdminCmdProvider;
-import de.pro_crafting.kit.plugins.CommandBookProvider;
-import de.pro_crafting.kit.plugins.EssentialsProvider;
-import org.bukkit.plugin.java.JavaPlugin;
-
-public class KitAPI extends JavaPlugin
+public class KitAPI
 {
+
+	private static KitAPI instance;
 	private List<KitProvider> kitProviders;
 	private ServicesManager sm;
 
-	public void onEnable() {
+	public KitAPI() {
+		instance = this;
+	}
+
+	public static KitAPI getInstance() {
+		return instance;
+	}
+
+	public void load() {
 		this.kitProviders = new ArrayList<KitProvider>();
 		this.sm = Bukkit.getServicesManager();
 		this.loadKitPlugins();
