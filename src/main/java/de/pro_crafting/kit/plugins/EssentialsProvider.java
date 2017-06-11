@@ -1,24 +1,20 @@
 package de.pro_crafting.kit.plugins;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.Plugin;
-
 import com.earth2me.essentials.CommandSource;
 import com.earth2me.essentials.Essentials;
 import com.earth2me.essentials.IEssentials;
 import com.earth2me.essentials.Kit;
-import com.earth2me.essentials.User;
 import com.earth2me.essentials.textreader.IText;
 import com.earth2me.essentials.textreader.KeywordReplacer;
 import com.earth2me.essentials.textreader.SimpleTextInput;
-
 import de.pro_crafting.kit.KitProvider;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
 
 public class EssentialsProvider implements KitProvider
 {
@@ -44,9 +40,8 @@ public class EssentialsProvider implements KitProvider
 		kitName = kitName.toLowerCase();
 		Map<String, Object> kit = plugin.getSettings().getKit(kitName);
 		List<String> items = null;
-		User tmp = plugin.getOfflineUser("tmp");
 		try {
-			items = Kit.getItems(plugin, tmp, kitName, kit);
+			items = new Kit(kitName, plugin).getItems();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
