@@ -1,6 +1,5 @@
 package com.pro_crafting.mc.kit;
 
-import com.pro_crafting.mc.kit.plugins.AdminCmdProvider;
 import com.pro_crafting.mc.kit.plugins.CommandBookProvider;
 import com.pro_crafting.mc.kit.plugins.EssentialsProvider;
 
@@ -37,7 +36,6 @@ public class KitAPI
 
 	private void loadKitPlugins()
 	{
-		hookKitPlugin("AdminCmd", AdminCmdProvider.class);
 		hookKitPlugin("Essentials", EssentialsProvider.class);
 		hookKitPlugin("CommandBook", CommandBookProvider.class);
 	}
