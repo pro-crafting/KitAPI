@@ -1,8 +1,9 @@
-package de.pro_crafting.kit;
+package com.pro_crafting.mc.kit;
 
-import de.pro_crafting.kit.plugins.AdminCmdProvider;
-import de.pro_crafting.kit.plugins.CommandBookProvider;
-import de.pro_crafting.kit.plugins.EssentialsProvider;
+import com.pro_crafting.mc.kit.plugins.AdminCmdProvider;
+import com.pro_crafting.mc.kit.plugins.CommandBookProvider;
+import com.pro_crafting.mc.kit.plugins.EssentialsProvider;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.bukkit.Bukkit;

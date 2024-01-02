@@ -1,4 +1,4 @@
-package de.pro_crafting.kit.plugins;
+package com.pro_crafting.mc.kit.plugins;
 
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -6,7 +6,7 @@ import org.bukkit.inventory.ItemStack;
 import com.sk89q.commandbook.CommandBook;
 import com.sk89q.commandbook.kits.KitsComponent;
 
-import de.pro_crafting.kit.KitProvider;
+import com.pro_crafting.mc.kit.KitProvider;
 
 public class CommandBookProvider implements KitProvider{
 

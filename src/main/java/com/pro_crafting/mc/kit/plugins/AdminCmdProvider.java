@@ -1,11 +1,11 @@
-package de.pro_crafting.kit.plugins;
+package com.pro_crafting.mc.kit.plugins;
 
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import be.Balor.Kit.KitInstance;
 import be.Balor.bukkit.AdminCmd.ACHelper;
-import de.pro_crafting.kit.KitProvider;
+import com.pro_crafting.mc.kit.KitProvider;
 
 public class AdminCmdProvider implements KitProvider
 {

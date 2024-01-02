@@ -1,4 +1,4 @@
-package de.pro_crafting.kit;
+package com.pro_crafting.mc.kit;
 
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;

@@ -1,4 +1,4 @@
-package de.pro_crafting.kit.plugins;
+package com.pro_crafting.mc.kit.plugins;
 
 import com.earth2me.essentials.CommandSource;
 import com.earth2me.essentials.Essentials;
@@ -7,7 +7,7 @@ import com.earth2me.essentials.Kit;
 import com.earth2me.essentials.textreader.IText;
 import com.earth2me.essentials.textreader.KeywordReplacer;
 import com.earth2me.essentials.textreader.SimpleTextInput;
-import de.pro_crafting.kit.KitProvider;
+import com.pro_crafting.mc.kit.KitProvider;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
