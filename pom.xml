@@ -14,6 +14,13 @@
   <artifactId>kit</artifactId>
   <version>0.2.0-SNAPSHOT</version>
 
+  <scm>
+    <connection>scm:git@github.com:pro-crafting/KitAPI.git</connection>
+    <url>https://github.com/pro-crafting/KitAPI</url>
+    <developerConnection>scm:git:git@github.com:pro-crafting/KitAPI.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
   <properties>
     <maven.compiler.release>17</maven.compiler.release>
 
