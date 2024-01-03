@@ -1,0 +1,2 @@
+[![Version](https://img.shields.io/maven-central/v/com.pro-crafting.mc/commandframework?logo=apache-maven&style=for-the-badge)](https://search.maven.org/artifact/com.pro-crafting.mc/commandframework)
+[![GitHub Actions Status](<https://img.shields.io/github/actions/workflow/status/pro-crafting/CommandFramework/build.yml?branch=main&logo=GitHub&style=for-the-badge>)](https://github.com/pro-crafting/Common/actions/workflows/build.yml)
