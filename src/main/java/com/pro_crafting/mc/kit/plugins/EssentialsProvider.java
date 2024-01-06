@@ -27,7 +27,7 @@ public class EssentialsProvider implements KitProvider
 	{
 		Plugin plugin = Bukkit.getPluginManager().getPlugin("Essentials");
 		 
-	    if (plugin == null || !(plugin instanceof IEssentials)) {
+	    if (!(plugin instanceof IEssentials)) {
 	        return null; 
 	    }
 	    
@@ -38,7 +38,7 @@ public class EssentialsProvider implements KitProvider
 		Essentials plugin =  this.getPlugin();
 		
 		kitName = kitName.toLowerCase();
-		Map<String, Object> kit = plugin.getSettings().getKit(kitName);
+
 		List<String> items = null;
 		try {
 			items = new Kit(kitName, plugin).getItems();
