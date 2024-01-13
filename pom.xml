@@ -10,13 +10,13 @@
 
   <groupId>com.pro-crafting.mc</groupId>
   <artifactId>kit</artifactId>
-  <version>0.3.1</version>
+  <version>0.3.2-SNAPSHOT</version>
 
   <scm>
     <connection>scm:git@github.com:pro-crafting/KitAPI.git</connection>
     <url>https://github.com/pro-crafting/KitAPI</url>
     <developerConnection>scm:git:git@github.com:pro-crafting/KitAPI.git</developerConnection>
-    <tag>kit-0.3.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
